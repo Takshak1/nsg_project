@@ -1,0 +1,86 @@
+{
+    "study_info": {
+        "title": "Gravity-Based Structural Mapping of Sedimentary Basin",
+        "subtitle": "Real-Data Inversion using Bouguer Gravity Anomalies",
+        "date": "2025-10-31",
+        "survey_area": "239.70\u00b0\u2013275.70\u00b0, 24.00\u00b0\u201360.00\u00b0",
+        "data_points": 1369,
+        "method": "3D Gravity Inversion (L-BFGS-B Optimization)"
+    },
+    "basin_parameters": {
+        "depth_m": 26040.909339885995,
+        "width_m": 36000.0,
+        "thickness_m": 36000.0,
+        "density_contrast_kg_m3": -0.5913589479523911,
+        "estimated_porosity_percent": 5.879419479523911,
+        "basin_volume_km3": 33705.90058449225,
+        "water_storage_potential_km3": 6741.180116898451
+    },
+    "inversion_results": {
+        "optimization_method": "L-BFGS-B",
+        "convergence_status": "Success",
+        "function_evaluations": 65,
+        "optimization_message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+        "final_misfit": 3906430.999815847,
+        "parameter_bounds": {
+            "depth": [
+                500,
+                5000
+            ],
+            "width": [
+                1000,
+                6000
+            ],
+            "thickness": [
+                500,
+                3000
+            ],
+            "density_contrast": [
+                -500,
+                -100
+            ]
+        }
+    },
+    "resource_assessment": {
+        "groundwater_potential": {
+            "confidence_percent": 85,
+            "risk_level": "Low",
+            "investment_range_usd": [
+                100000.0,
+                500000.0
+            ],
+            "recommended_wells": 6,
+            "expected_yield": "High"
+        },
+        "natural_gas_potential": {
+            "confidence_percent": 45,
+            "risk_level": "Moderate",
+            "investment_range_usd": [
+                1000000.0,
+                3000000.0
+            ],
+            "exploration_targets": 3,
+            "thermal_maturity": "Limited"
+        },
+        "oil_potential": {
+            "confidence_percent": 15,
+            "risk_level": "High",
+            "investment_range_usd": [
+                5000000.0,
+                15000000.0
+            ],
+            "exploration_targets": 1,
+            "thermal_maturity": "Insufficient"
+        }
+    },
+    "sensitivity_analysis": {
+        "most_sensitive_parameter": "Width",
+        "least_sensitive_parameter": "Thickness",
+        "parameter_sensitivity_coefficients": {
+            "depth": 0.4878566054938369,
+            "width": 0.43999999999999967,
+            "thickness": 0.16886691373312632,
+            "density_contrast": 0.2
+        }
+    }
+}
